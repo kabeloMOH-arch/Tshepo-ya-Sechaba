@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+</head>
+
+<body>
+    <header>
+   <img src="/images/Tso.jpg" alt="TSO Logo">
+    <nav >
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">services</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact Us</a>
+
+    </nav>
+    </header>
+    <main>
+<h1>Get Involved</h1>
+<p>Interested in Volunteering your time or supporting TSO as a sponsor? fill out the form below and we'll be in touch</p>
+<form id="enquiry-form" novalidate>
+    <label for="name">full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" required>
+   
+     <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+     <label for="EnquiryType">I am Interested in:</label>
+      <select id="EnquiryType" name="EnquiryType" required>
+        <option value="">--Select an option--</option>
+        <option value="volunteer"> Volunteering</option>
+        <option value="sponsor">becoming a sponsor</option>
+      </select>
+<label for="message">Tell us more:</label>
+<textarea id="message" name="message" rows="5"></textarea>
+<p id="enquiry-error"></p>
+<button type="submit">submit Enquiry</button>
+</form>
+<div id="enquiry-response"></div>
+    </main>
+    <footer>&copy;ST10533511</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
